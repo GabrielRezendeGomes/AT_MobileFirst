@@ -13,11 +13,11 @@ import foto5 from "./assets/harry-potter5.jpg";
 import foto6 from "./assets/harry-potter6.jpg";
 
 import video1 from "./assets/video1.mp4";
-import video2 from "./assets/video2.mp4";
-import video3 from "./assets/video3.mp4";
-import video4 from "./assets/video4.mp4";
-import video5 from "./assets/video5.mp4";
-import video6 from "./assets/video6.mp4";
+import video2 from "./assets/Video2.mp4";
+import video3 from "./assets/Video3.mp4";
+import video4 from "./assets/Video4.mp4";
+import video5 from "./assets/Video5.mp4";
+import video6 from "./assets/Video6.mp4";
 
 function App(){
 
