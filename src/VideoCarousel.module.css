@@ -1,0 +1,61 @@
+.carouselContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box; /* Para manter espaçamento em telas pequenas */
+  }
+  
+  .videoContainer {
+    width: 100%;
+    position: relative;
+  }
+  
+  .video {
+    width: 100%;
+    height: auto; /* Mantém a proporção do vídeo */
+    border-radius: 8px;
+  }
+  
+  .prevButton, .nextButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition: background-color 0.3s;
+  }
+  
+  .prevButton {
+    left: 0;
+  }
+  
+  .nextButton {
+    right: 0;
+  }
+  
+  .prevButton:hover, .nextButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Responsividade para telas pequenas */
+  @media (max-width: 600px) {
+    .prevButton, .nextButton {
+      font-size: 1.5rem; /* Reduz tamanho das setas em telas menores */
+      padding: 0.25rem;
+    }
+  
+    .carouselContainer {
+      padding: 0.5rem; /* Reduz o padding para telas pequenas */
+    }
+  }
+  

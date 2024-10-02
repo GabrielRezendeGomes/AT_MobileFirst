@@ -1,0 +1,86 @@
+/* Estilos base para a navbar */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  position: relative; /* Para permitir que elementos filhos usem position: absolute */
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+
+/* Adicionando z-index aqui */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  z-index: 999; /* Adicione isso */
+}
+
+.navbar-item {
+  margin-left: 1.5rem;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-item a:hover {
+  color: #ddd;
+}
+
+/* Esconder o menu para telas pequenas */
+.navbar-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Ícone de hambúrguer */
+.hamburger-icon::before {
+  content: '\2630'; /* Unicode do ícone de hambúrguer (três linhas) */
+  font-size: 2rem;
+  color: white;
+}
+
+/* Media queries para telas pequenas */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute; /* O menu se posiciona em relação à navbar */
+    top: 60px; /* Pode ser ajustado para a altura da navbar */
+    left: 0;
+    padding: 1rem;
+    z-index: 999; /* Adicione isso para sobrepor outros conteúdos */
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-item {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}

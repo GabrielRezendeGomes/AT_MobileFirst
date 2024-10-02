@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.dark-theme {
+  background-color:#242424; 
+  color: rgba(255, 255, 255, 0.87); 
+}
+
+.app {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para o ToggleSwitch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; 
+  transition: .4s;
+  border-radius: 34px; 
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white; 
+  transition: .4s;
+  border-radius: 50%; 
+}
+
+/* Estilo quando o botão é ativado */
+input:checked + .slider {
+  background-color: #2196F3; 
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px); 
+}
+
+
+
+.rodape {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  padding: 2rem;
+  color: white; 
+}
+
+
+h2 {
+  margin-top: 0; 
+}
+
+ul {
+  list-style-type: none; 
+  padding: 0; 
+}
+
+li {
+  margin-bottom: 0.5rem; 
+}
+
+@media (max-width: 768px) {
+  .rodape {
+    grid-template-columns: 1fr; 
+  }
+}
