@@ -83,11 +83,11 @@ function App(){
         </div>
       </section>
     </main>
-    <footer className="rodape" style={{backgroundColor:'#00008B'}}>
+    <footer id="contact" className="rodape" style={{backgroundColor:'#00008B'}}>
       <div className="cadastro">
         <Login/>
       </div>
-      <div>
+      <div id="endereço">
         <h2>Contatos</h2>
         <ul>
           <li>telefone: (21)8888-8888</li>
