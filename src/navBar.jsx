@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import ToggleSwitch from "./ToggleSwitch"
+import logo from "./assets/livro-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar" id='home'>
-      <div className="navbar-logo"><img src="src\assets\livro-logo.png" alt="logo-livro" width={"30rem"} height={"30rem"} /></div>
+      <div className="navbar-logo"><img src={logo} alt="logo-livro" width={"30rem"} height={"30rem"} /></div>
       <ToggleSwitch/>
       <button className="navbar-toggle" onClick={toggleMenu}>
         {/* Ícone de hambúrguer */}
